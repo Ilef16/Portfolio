@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projets — Ilef Ben Ayed</title>
+  <link href="Style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <img src="../images/square_y7kkq9jmknyo_32 (2).png" alt="logo">
+        Ilef Ben Ayed
+      </div>
+      <nav>
+        <a href="../acceuil.html"    data-fr="À Propos"           data-en="About">À Propos</a>
+                <a href="professionnel.html" data-fr="Expériences"        data-en="Experience">Expériences</a>
+
+        <a href="parcour.html"       data-fr="Parcours Académique" data-en="Education">Parcours Académique</a>
+        <a href="competences.html"   data-fr="Compétences"        data-en="Skills">Compétences</a>
+        <a href="projets.html" class="active" data-fr="Projets"   data-en="Projects">Projets</a>
+      </nav>
+      <div class="header-controls">
+        <button class="ctrl-btn" id="themeBtn" onclick="toggleTheme()">
+          <svg id="themeIcon" class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <span id="themeLabel">Clair</span>
+        </button>
+        <button class="ctrl-btn" id="langBtn" onclick="toggleLang()">
+          <svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span id="langLabel">EN</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+    <h2 class="section-title" data-fr="Projets Académiques" data-en="Academic Projects">Projets Académiques</h2>
+    <p class="section-subtitle" data-fr="Réalisations concrètes issues de ma formation" data-en="Concrete achievements from my studies">Réalisations concrètes issues de ma formation</p>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="card-icon">
+          <svg class="ico" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+        </div>
+        <h3 data-fr="Plateforme de Gestion des Cours en Ligne" data-en="Online Course Management Platform">Plateforme de Gestion des Cours en Ligne</h3>
+        <p data-fr="Développement d'une plateforme web interactive permettant l'inscription des apprenants, la gestion des contenus pédagogiques et le suivi de la progression."
+           data-en="Development of an interactive web platform for learner registration, content management and progress tracking.">
+          Développement d'une plateforme web interactive permettant l'inscription des apprenants, la gestion des contenus pédagogiques et le suivi de la progression.
+        </p>
+        <div class="tech-tags"><span class="tech-tag">ASP.NET</span><span class="tech-tag">SSMS</span><span class="tech-tag">SQL Server</span></div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-icon">
+          <svg class="ico" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        </div>
+        <h3 data-fr="Classification d'Images &amp; Génération de Légendes" data-en="Image Classification &amp; Caption Generation">Classification d'Images &amp; Génération de Légendes</h3>
+        <p data-fr="Conception d'un modèle IA sous PyTorch pour classifier des images et générer automatiquement des légendes. Architectures ResNet, EfficientNet et ViT."
+           data-en="Design of an AI model under PyTorch to classify images and automatically generate captions. ResNet, EfficientNet and ViT architectures.">
+          Conception d'un modèle IA sous PyTorch pour classifier des images et générer automatiquement des légendes. Architectures ResNet, EfficientNet et ViT.
+        </p>
+        <div class="tech-tags">
+          <span class="tech-tag">PyTorch</span><span class="tech-tag">TensorFlow</span><span class="tech-tag">NLTK</span>
+          <span class="tech-tag">ResNet</span><span class="tech-tag">EfficientNet</span><span class="tech-tag">ViT</span><span class="tech-tag">MSCOCO</span>
+        </div>
+      </div>
+
+     <div class="project-card">
+  <div class="card-icon">
+    <svg class="ico" viewBox="0 0 24 24">
+      <rect x="6" y="2" width="12" height="20" rx="2"/>
+      <circle cx="12" cy="18" r="1"/>
+    </svg>
+  </div>
+
+  <h3 data-fr="Application Mobile CV & Portfolio"
+      data-en="CV & Portfolio Mobile Application">
+    Application Mobile CV & Portfolio
+  </h3>
+
+  <p data-fr="Développement d'une application mobile moderne permettant de présenter le profil professionnel, les compétences, les expériences, les projets et les certifications à travers une interface intuitive et responsive."
+     data-en="Development of a modern mobile application showcasing professional profile, skills, experience, projects, and certifications through an intuitive and responsive interface.">
+    Développement d'une application mobile moderne permettant de présenter le profil professionnel, les compétences, les expériences, les projets et les certifications à travers une interface intuitive et responsive.
+  </p>
+
+  <div class="tech-tags">
+    <span class="tech-tag">Flutter</span>
+    <span class="tech-tag">Dart</span>
+    <span class="tech-tag">Firebase</span>
+  </div>
+</div>
+
+
+      <div class="project-card">
+        <div class="card-icon">
+          <svg class="ico" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3 data-fr="Application Desktop Java" data-en="Java Desktop Application">Application Desktop Java</h3>
+        <p data-fr="Application Java sous Eclipse connectée à Oracle. Modélisation UML complète : cas d'utilisation, classes, séquences."
+           data-en="Java application under Eclipse connected to Oracle. Full UML modeling: use cases, classes, sequences.">
+          Application Java sous Eclipse connectée à Oracle. Modélisation UML complète : cas d'utilisation, classes, séquences.
+        </p>
+        <div class="tech-tags"><span class="tech-tag">Java</span><span class="tech-tag">Eclipse</span><span class="tech-tag">Oracle</span><span class="tech-tag">UML</span></div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-icon">
+          <svg class="ico" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3 data-fr="Application Desktop VB.NET" data-en="VB.NET Desktop Application">Application Desktop VB.NET</h3>
+        <p data-fr="Application de gestion en VB.NET avec modélisation UML complète et base de données MySQL."
+           data-en="Management application in VB.NET with full UML modeling and MySQL database.">
+          Application de gestion en VB.NET avec modélisation UML complète et base de données MySQL.
+        </p>
+        <div class="tech-tags"><span class="tech-tag">VB.NET</span><span class="tech-tag">MySQL</span><span class="tech-tag">UML</span></div>
+      </div>
+
+      <div class="project-card">
+        <div class="card-icon">
+          <svg class="ico" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <h3 data-fr="Portfolio Personnel" data-en="Personal Portfolio">Portfolio Personnel</h3>
+        <p data-fr="Conception et développement de ce portfolio web professionnel multi-pages avec dark/light mode et traduction FR/EN."
+           data-en="Design and development of this professional multi-page web portfolio with dark/light mode and FR/EN translation.">
+          Conception et développement de ce portfolio web professionnel multi-pages avec dark/light mode et traduction FR/EN.
+        </p>
+        <div class="tech-tags"><span class="tech-tag">HTML5</span><span class="tech-tag">CSS3</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Responsive</span></div>
+      </div>
+
+    </div>
+
+    <div style="text-align:center;margin-top:50px;">
+      <p style="color:var(--text-muted);margin-bottom:16px;" data-fr="Retrouvez d'autres projets sur mon GitHub" data-en="Find more projects on my GitHub">Retrouvez d'autres projets sur mon GitHub</p>
+      <a href="https://github.com/Ilef16" target="_blank" class="btn-primary">
+        <svg class="ico ico-sm" viewBox="0 0 24 24" style="stroke:#0a192f"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        <span data-fr="Voir mon GitHub" data-en="View my GitHub">Voir mon GitHub</span>
+      </a>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/ilef-ben-ayed" target="_blank" title="LinkedIn"><svg class="ico" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="https://github.com/Ilef16" target="_blank" title="GitHub"><svg class="ico" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        <a href="mailto:ilefbenayed08@gmail.com" title="Email"><svg class="ico" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+      </div>
+      <p class="footer-text">© <span id="copy-year"></span> Ilef Ben Ayed — <a href="mailto:ilefbenayed08@gmail.com">ilefbenayed08@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    let currentLang=localStorage.getItem('lang')||'fr',currentTheme=localStorage.getItem('theme')||'dark';
+    applyTheme(currentTheme);applyLang(currentLang);
+    function toggleTheme(){currentTheme=currentTheme==='dark'?'light':'dark';localStorage.setItem('theme',currentTheme);applyTheme(currentTheme);}
+    function applyTheme(t){const ic=document.getElementById('themeIcon'),lb=document.getElementById('themeLabel');if(t==='light'){document.body.classList.add('light');ic.innerHTML='<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';lb.textContent=currentLang==='fr'?'Sombre':'Dark';}else{document.body.classList.remove('light');ic.innerHTML='<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';lb.textContent=currentLang==='fr'?'Clair':'Light';}}
+    function toggleLang(){currentLang=currentLang==='fr'?'en':'fr';localStorage.setItem('lang',currentLang);applyLang(currentLang);}
+    function applyLang(l){document.getElementById('langLabel').textContent=l==='fr'?'EN':'FR';document.documentElement.lang=l;document.querySelectorAll('[data-fr][data-en]').forEach(el=>{const v=el.getAttribute('data-'+l);if(v!==null)el.innerHTML=v;});const lb=document.getElementById('themeLabel');lb.textContent=currentTheme==='light'?(l==='fr'?'Sombre':'Dark'):(l==='fr'?'Clair':'Light');}
+  </script>
+</body>
+</html>

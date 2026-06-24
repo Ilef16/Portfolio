@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Ilef Ben Ayed</title>
+  <link href="Style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <img src="../images/square_y7kkq9jmknyo_32 (2).png" alt="logo">
+        Ilef Ben Ayed
+      </div>
+      <nav>
+        <a href="../acceuil.html"    data-fr="À Propos"           data-en="About">À Propos</a>
+        <a href="parcour.html"       data-fr="Parcours Académique" data-en="Education">Parcours Académique</a>
+        <a href="professionnel.html" data-fr="Expériences"        data-en="Experience">Expériences</a>
+        <a href="competences.html"   data-fr="Compétences"        data-en="Skills">Compétences</a>
+        <a href="projets.html"       data-fr="Projets"            data-en="Projects">Projets</a>
+      </nav>
+      <div class="header-controls">
+        <button class="ctrl-btn" id="themeBtn" onclick="toggleTheme()">
+          <svg id="themeIcon" class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <span id="themeLabel">Clair</span>
+        </button>
+        <button class="ctrl-btn" id="langBtn" onclick="toggleLang()">
+          <svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span id="langLabel">EN</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+    <h2 class="section-title" data-fr="Me Contacter" data-en="Contact Me">Me Contacter</h2>
+    <p class="section-subtitle" data-fr="Disponible pour toute opportunité professionnelle ou collaboration" data-en="Available for any professional opportunity or collaboration">Disponible pour toute opportunité professionnelle ou collaboration</p>
+
+    <div class="contact-grid">
+
+      <div class="contact-info">
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <div class="contact-item-label" data-fr="Localisation" data-en="Location">Localisation</div>
+            <div class="contact-item-value">Sfax, Tunisie</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.19 12 19.79 19.79 0 0 1 1.08 3.18 2 2 0 0 1 3.06 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="contact-item-label" data-fr="Téléphone" data-en="Phone">Téléphone</div>
+            <div class="contact-item-value"><a href="tel:+21621958304">+216 21 958 304</a></div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <div class="contact-item-label">Email</div>
+            <div class="contact-item-value"><a href="mailto:ilefbenayed08@gmail.com">ilefbenayed08@gmail.com</a></div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div>
+            <div class="contact-item-label">LinkedIn</div>
+            <div class="contact-item-value"><a href="https://linkedin.com/in/ilef-ben-ayed" target="_blank">linkedin.com/in/ilef-ben-ayed</a></div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </div>
+          <div>
+            <div class="contact-item-label">GitHub</div>
+            <div class="contact-item-value"><a href="https://github.com/Ilef16" target="_blank">github.com/Ilef16</a></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="contact-form">
+        <form onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label data-fr="Nom complet" data-en="Full Name">Nom complet</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+          </div>
+          <div class="form-group">
+            <label data-fr="Adresse Email" data-en="Email Address">Adresse Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+          </div>
+          <div class="form-group">
+            <label data-fr="Sujet" data-en="Subject">Sujet</label>
+            <input type="text" id="sujet" name="sujet">
+          </div>
+          <div class="form-group">
+            <label data-fr="Message" data-en="Message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            <svg class="ico" viewBox="0 0 24 24" style="stroke:#0a192f"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <span data-fr="Envoyer le message" data-en="Send message">Envoyer le message</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/ilef-ben-ayed" target="_blank" title="LinkedIn"><svg class="ico" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="https://github.com/Ilef16" target="_blank" title="GitHub"><svg class="ico" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        <a href="mailto:ilefbenayed08@gmail.com" title="Email"><svg class="ico" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+      </div>
+      <p class="footer-text">© <span id="copy-year"></span> Ilef Ben Ayed — <a href="mailto:ilefbenayed08@gmail.com">ilefbenayed08@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    let currentLang=localStorage.getItem('lang')||'fr',currentTheme=localStorage.getItem('theme')||'dark';
+    applyTheme(currentTheme);applyLang(currentLang);
+    function toggleTheme(){currentTheme=currentTheme==='dark'?'light':'dark';localStorage.setItem('theme',currentTheme);applyTheme(currentTheme);}
+    function applyTheme(t){const ic=document.getElementById('themeIcon'),lb=document.getElementById('themeLabel');if(t==='light'){document.body.classList.add('light');ic.innerHTML='<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';lb.textContent=currentLang==='fr'?'Sombre':'Dark';}else{document.body.classList.remove('light');ic.innerHTML='<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';lb.textContent=currentLang==='fr'?'Clair':'Light';}}
+    function toggleLang(){currentLang=currentLang==='fr'?'en':'fr';localStorage.setItem('lang',currentLang);applyLang(currentLang);}
+    function applyLang(l){document.getElementById('langLabel').textContent=l==='fr'?'EN':'FR';document.documentElement.lang=l;document.querySelectorAll('[data-fr][data-en]').forEach(el=>{const v=el.getAttribute('data-'+l);if(v!==null)el.innerHTML=v;});const lb=document.getElementById('themeLabel');lb.textContent=currentTheme==='light'?(l==='fr'?'Sombre':'Dark'):(l==='fr'?'Clair':'Light');}
+    function handleSubmit(e){
+      e.preventDefault();
+      const n=document.getElementById('name').value.trim();
+      const em=document.getElementById('email').value.trim();
+      const m=document.getElementById('message').value.trim();
+      if(!n||!em||!m){alert(currentLang==='fr'?'Veuillez remplir tous les champs.':'Please fill in all required fields.');return;}
+      alert(currentLang==='fr'?'Merci '+n+' ! Message envoyé.':'Thank you '+n+'! Message sent.');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
