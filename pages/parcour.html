@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcours Académique — Ilef Ben Ayed</title>
+  <link href="Style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <img src="../images/square_y7kkq9jmknyo_32 (2).png" alt="logo">
+        Ilef Ben Ayed
+      </div>
+      <nav>
+        <a href="../acceuil.html"    data-fr="À Propos"           data-en="About">À Propos</a>
+                <a href="professionnel.html" data-fr="Expériences"        data-en="Experience">Expériences</a>
+
+        <a href="parcour.html" class="active" data-fr="Parcours Académique" data-en="Education">Parcours Académique</a>
+        <a href="competences.html"   data-fr="Compétences"        data-en="Skills">Compétences</a>
+        <a href="projets.html"       data-fr="Projets"            data-en="Projects">Projets</a>
+      </nav>
+      <div class="header-controls">
+        <button class="ctrl-btn" id="themeBtn" onclick="toggleTheme()">
+          <svg id="themeIcon" class="ico" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <span id="themeLabel">Clair</span>
+        </button>
+        <button class="ctrl-btn" id="langBtn" onclick="toggleLang()">
+          <svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span id="langLabel">EN</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+    <h2 class="section-title" data-fr="Parcours Académique" data-en="Academic Background">Parcours Académique</h2>
+    <p class="section-subtitle" data-fr="Mon chemin de formation, de 2019 à aujourd'hui" data-en="My education path, from 2019 to today">Mon chemin de formation, de 2019 à aujourd'hui</p>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-date">2022 — 2025</div>
+        <div class="timeline-card">
+          <h3 data-fr="Cycle Ingénieur en Génie Informatique" data-en="Computer Engineering Degree">Cycle Ingénieur en Génie Informatique</h3>
+          <div class="company">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span data-fr="Institut International de Technologie (IIT) — Sfax, Tunisie" data-en="International Institute of Technology (IIT) — Sfax, Tunisia">Institut International de Technologie (IIT) — Sfax, Tunisie</span>
+          </div>
+          <p data-fr="Formation d'ingénieur axée sur le développement logiciel, l'intelligence artificielle, la science des données, le DevOps et la gestion de projets informatiques."
+             data-en="Engineering program focused on software development, artificial intelligence, data science, DevOps and IT project management.">
+            Formation d'ingénieur axée sur le développement logiciel, l'intelligence artificielle, la science des données, le DevOps et la gestion de projets informatiques.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">Machine Learning</span><span class="tech-tag">Deep Learning</span>
+            <span class="tech-tag">Big Data</span><span class="tech-tag">DevOps</span>
+            <span class="tech-tag" data-fr="Développement Web &amp; Mobile" data-en="Web &amp; Mobile Dev">Développement Web &amp; Mobile</span>
+            <span class="tech-tag" data-fr="Sécurité IT" data-en="IT Security">Sécurité IT</span>
+            <span class="tech-tag" data-fr="Gestion de Projet" data-en="Project Management">Gestion de Projet</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2019 — 2022</div>
+        <div class="timeline-card">
+          <h3 data-fr="Licence en Informatique de Gestion — Business Intelligence" data-en="BSc in Management IT — Business Intelligence">Licence en Informatique de Gestion — Business Intelligence</h3>
+          <div class="company">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span data-fr="Institut Supérieur d'Administration des Affaires (ISAAS) — Sfax" data-en="Higher Institute of Business Administration (ISAAS) — Sfax">Institut Supérieur d'Administration des Affaires (ISAAS) — Sfax</span>
+          </div>
+          <p data-fr="Formation orientée vers l'analyse décisionnelle, les bases de données, le data warehousing et le développement d'applications de gestion."
+             data-en="Program focused on decision-making analysis, databases, data warehousing and management application development.">
+            Formation orientée vers l'analyse décisionnelle, les bases de données, le data warehousing et le développement d'applications de gestion.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag">Business Intelligence</span><span class="tech-tag">Data Warehousing</span>
+            <span class="tech-tag">SQL Server</span><span class="tech-tag">VB.NET</span><span class="tech-tag">ASP.NET</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2019</div>
+        <div class="timeline-card">
+          <h3 data-fr="Baccalauréat en Sciences Expérimentales" data-en="High School Diploma — Experimental Sciences">Baccalauréat en Sciences Expérimentales</h3>
+          <div class="company">
+            <svg class="ico" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span data-fr="Lycée Mahmoud Magdish (LMM) — Sfax, Tunisie" data-en="Mahmoud Magdish High School (LMM) — Sfax, Tunisia">Lycée Mahmoud Magdish (LMM) — Sfax, Tunisie</span>
+          </div>
+          <p data-fr="Obtention du baccalauréat en sciences expérimentales, base solide en mathématiques, physique et sciences naturelles."
+             data-en="Obtained baccalaureate in experimental sciences, with a strong foundation in mathematics, physics and natural sciences.">
+            Obtention du baccalauréat en sciences expérimentales, base solide en mathématiques, physique et sciences naturelles.
+          </p>
+          <div class="tech-tags">
+            <span class="tech-tag" data-fr="Sciences Expérimentales" data-en="Experimental Sciences">Sciences Expérimentales</span>
+            <span class="tech-tag" data-fr="Mathématiques" data-en="Mathematics">Mathématiques</span>
+            <span class="tech-tag" data-fr="Physique" data-en="Physics">Physique</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <h2 class="section-title" style="margin-top:60px;" data-fr="Formations Complémentaires" data-en="Additional Training">Formations Complémentaires</h2>
+    <p class="section-subtitle" data-fr="Certifications et formations para-académiques" data-en="Certifications and extra-curricular training">Certifications et formations para-académiques</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
+
+      <div class="skill-card">
+        <h3>
+          <svg class="ico ico-sm" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <span data-fr="Leadership &amp; Communication" data-en="Leadership &amp; Communication">Leadership &amp; Communication</span>
+        </h3>
+        <p style="color:var(--text-muted);font-size:0.9rem;" data-fr="Faculté des Sciences Économiques et de Gestion de Sfax" data-en="Faculty of Economics and Management — Sfax">
+          Faculté des Sciences Économiques et de Gestion de Sfax
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>
+          <svg class="ico ico-sm" viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+          <span data-fr="Public Speaking" data-en="Public Speaking">Public Speaking</span>
+        </h3>
+        <p style="color:var(--text-muted);font-size:0.9rem;" data-fr="Institut Supérieur d'Administration des Affaires de Sfax" data-en="Higher Institute of Business Administration — Sfax">
+          Institut Supérieur d'Administration des Affaires de Sfax
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>
+          <svg class="ico ico-sm" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span data-fr="Digital Marketing" data-en="Digital Marketing">Digital Marketing</span>
+        </h3>
+        <p style="color:var(--text-muted);font-size:0.9rem;" data-fr="Institut Polytechnique Privé des Sciences Avancées de Sfax" data-en="Private Polytechnic Institute of Advanced Sciences — Sfax">
+          Institut Polytechnique Privé des Sciences Avancées de Sfax
+        </p>
+      </div>
+
+    </div> -->
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-social">
+        <a href="https://linkedin.com/in/ilef-ben-ayed" target="_blank" title="LinkedIn">
+          <svg class="ico" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://github.com/Ilef16" target="_blank" title="GitHub">
+          <svg class="ico" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </a>
+        <a href="mailto:ilefbenayed08@gmail.com" title="Email">
+          <svg class="ico" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+      <p class="footer-text">© <span id="copy-year"></span> Ilef Ben Ayed — <a href="mailto:ilefbenayed08@gmail.com">ilefbenayed08@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    let currentLang  = localStorage.getItem('lang')  || 'fr';
+    let currentTheme = localStorage.getItem('theme') || 'dark';
+    applyTheme(currentTheme); applyLang(currentLang);
+    function toggleTheme(){ currentTheme=currentTheme==='dark'?'light':'dark'; localStorage.setItem('theme',currentTheme); applyTheme(currentTheme); }
+    function applyTheme(t){ const ic=document.getElementById('themeIcon'),lb=document.getElementById('themeLabel'); if(t==='light'){document.body.classList.add('light');ic.innerHTML='<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';lb.textContent=currentLang==='fr'?'Sombre':'Dark';}else{document.body.classList.remove('light');ic.innerHTML='<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';lb.textContent=currentLang==='fr'?'Clair':'Light';} }
+    function toggleLang(){ currentLang=currentLang==='fr'?'en':'fr'; localStorage.setItem('lang',currentLang); applyLang(currentLang); }
+    function applyLang(l){ document.getElementById('langLabel').textContent=l==='fr'?'EN':'FR'; document.documentElement.lang=l; document.querySelectorAll('[data-fr][data-en]').forEach(el=>{const v=el.getAttribute('data-'+l);if(v!==null)el.innerHTML=v;}); const lb=document.getElementById('themeLabel'); lb.textContent=currentTheme==='light'?(l==='fr'?'Sombre':'Dark'):(l==='fr'?'Clair':'Light'); }
+    document.getElementById('copy-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

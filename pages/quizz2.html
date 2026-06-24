@@ -1,0 +1,54 @@
+
+<html>
+  <head>
+    <title>Exemple de quiz</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Quelle est la capitale de l'Espagne ?</legend>
+        <div>
+          <input type="checkbox" name="answer" value="Madrid" /> Madrid<br />
+          <input type="checkbox" name="answer" value="Barcelone" /> Barcelone<br />
+          <input type="checkbox" name="answer" value="Valence" /> Valence<br />
+        </div>
+      </fieldset>
+     
+   
+    <div id="score"></div>
+    <div id="result"></div>
+
+    <legend>Quelle est la capitale de l'1 ?</legend>
+    <div>
+      <input type="checkbox" name="answer" value="12" /> 12<br />
+      <input type="checkbox" name="answer" value="14" /> 14<br />
+      <input type="checkbox" name="answer" value="15" /> 15<br />
+    </div>
+
+  <input type="button" value="Vérifier" onclick="checkAnswer()" />
+
+<div id="score1"></div>
+<div id="result1"></div>
+</form>
+    <script type="text/javascript">
+      function checkAnswer() {
+        var answer = document.querySelector('input[name="answer"]:checked');
+        var resultEl = document.getElementById('result1');
+        var scoreEl = document.getElementById('score1');
+        if (answer) {
+          if (answer.value === '12') {
+            resultEl.style.color = 'green';
+            resultEl.innerHTML = 'Bonne réponse !';
+            scoreEl.innerHTML = 'Score: 1';
+          } else {
+            resultEl.style.color = 'red';
+            resultEl.innerHTML = 'Mauvaise réponse. La bonne réponse est 12.';
+            scoreEl.innerHTML = 'Score: 0';
+          }
+        } else {
+          resultEl.innerHTML = 'Veuillez sélectionner une réponse.';
+        }
+      }
+    </script>
+  </body>
+</html>
